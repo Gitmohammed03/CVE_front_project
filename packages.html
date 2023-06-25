@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>CVEs Checker - Packages</title>
+    <title>CVEs Checker - Devices</title>
 
     <!-- Custom fonts for this template-->
     <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -48,19 +48,12 @@
                     <span>Dashboard</span></a>
             </li>
 
-            <!-- Nav Item - Packages -->
-            <li class="nav-item">
-                <a class="nav-link" href="packages.html">
-                    <i class="fas fa-fw fa-cube"></i>
-                    <span>Packages</span></a>
+            <!-- Nav Item - Devices -->
+            <li class="nav-item active">
+                <a class="nav-link" href="devices.html">
+                    <i class="fas fa-solid fa-desktop"></i>
+                    <span>Devices</span></a>
             </li>
-
-            <!-- Nav Item - Tables -->
-            <!-- <li class="nav-item">
-                <a class="nav-link" href="results.html">
-                    <i class="fas fa-fw fa-poll-h"></i>
-                    <span>Results</span></a>
-            </li> -->
 
             <!-- Divider -->
             <hr class="sidebar-divider d-none d-md-block">
@@ -222,9 +215,68 @@
                 <div class="container-fluid">
 
                     <!-- Page Heading -->
-                    <h1 class="h3 mb-4 text-gray-800">Packages</h1>
+                    <div class="d-sm-flex align-items-center justify-content-between mb-4">
+                        <h1 class="h3 mb-0 text-gray-800">Devices</h1>
+                        <a href="#" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i class="fas fa-plus fa-sm text-white-50"></i> Add new Device</a>
+                    </div>
 
-                    <div class="card">
+                    <div class="card shadow mb-4">
+                        <!-- Card Header - Accordion -->
+                        <a href="#collapseApiKey" class="d-block card-header py-3" data-toggle="collapse" role="button"
+                            aria-expanded="true" aria-controls="collapseApiKey">
+                            <h6 class="m-0 font-weight-bold text-primary">API Key</h6>
+                        </a>
+                        <!-- Card Content - Collapse -->
+                        <div class="collapse show" id="collapseApiKey">
+                            <div class="card-body">
+                                <div class="input-group">
+                                    <input type="text" id="my-key" class="form-control"
+                                        value="aksndsdcs-sgvbb54a-aca6c-asiwe88dau5w" readonly>
+                                    <div class="input-group-append">
+                                        <button class="btn btn-outline-secondary" type="button"
+                                            onclick="copyToClipboard()">
+                                            <i class="fas fa-copy"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    
+                    <div class="card mt-3">
+                        <div class="card-header">
+                            <h5 class="card-title">Device information</h5>
+                        </div>
+                        <div class="card-body">
+
+                            <!-- Card Content - Collapse -->
+
+                            <div class="card-body">
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item"><strong>OS:</strong>
+                                        <span class="badge badge-info" id="os"> Kali linux</span>
+                                    </li>
+                                    <li class="list-group-item"><strong>Kernel Version:</strong>
+                                        <span class="badge badge-info" id="kernel-version">5.12.0</span>
+                                    </li>
+                                    <li class="list-group-item"><strong>Hostname:</strong>
+                                        <span class="badge badge-info" id="hostname">mohammed.local</span>
+                                    </li>
+                                    <li class="list-group-item"><strong>Processor:</strong>
+                                        <span class="badge badge-info" id="processor">Intel Core i7</span>
+                                    </li>
+                                    <li class="list-group-item"><strong>Memory:</strong>
+                                        <span class="badge badge-info" id="memory">16 GB</span>
+                                    </li>
+                                    <li class="list-group-item"><strong>Disk Space:</strong>
+                                        <span class="badge badge-info" id="disk-space"> 512 GB</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card mt-3">
                         <div class="card-header">
                             <h5 class="card-title">All packages on system</h5>
                         </div>
@@ -233,7 +285,10 @@
                                 <div class="col-md-3 mt-3">
                                     <div class="card">
                                         <div class="card-body">
-                                            <h6 class="card-title">kali-desktop-core</h6>
+                                            <h6 class="card-title row">
+                                                <span class="col">kali-pakage</span> 
+                                                <span class="badge badge-success"><i class="fas fa-check"></i></span>
+                                            </h6> 
                                             <p class="card-text text">version: 2023.2.9</p>
                                         </div>
                                     </div>
@@ -242,8 +297,11 @@
                                 <div class="col-md-3 mt-3">
                                     <div class="card">
                                         <div class="card-body">
-                                            <h6 class="card-title">gpu</h6>
-                                            <p class="card-text text">version: 95.61.5</p>
+                                            <h6 class="card-title row">
+                                                <span class="col">kali-pakage</span> 
+                                                <span class="badge badge-success"><i class="fas fa-check"></i></span>
+                                            </h6> 
+                                            <p class="card-text text">version: 2023.2.9</p>
                                         </div>
                                     </div>
                                 </div>
@@ -251,8 +309,13 @@
                                 <div class="col-md-3 mt-3">
                                     <div class="card">
                                         <div class="card-body">
-                                            <h6 class="card-title">ftp</h6>
-                                            <p class="card-text text">version: 3.15.6</p>
+                                            <h6 class="card-title row">
+                                                <span class="col">kali-pakage</span> 
+                                                <span class="badge badge-warning">
+                                                    <i class="fas fa-exclamation-triangle"></i>
+                                                </span>
+                                            </h6> 
+                                            <p class="card-text text">version: 2023.2.9</p>
                                         </div>
                                     </div>
                                 </div>
@@ -260,8 +323,13 @@
                                 <div class="col-md-3 mt-3">
                                     <div class="card">
                                         <div class="card-body">
-                                            <h6 class="card-title">ssh</h6>
-                                            <p class="card-text text">version: 6.1.5</p>
+                                            <h6 class="card-title row">
+                                                <span class="col">kali-pakage</span> 
+                                                <span class="badge badge-warning">
+                                                    <i class="fas fa-exclamation-triangle"></i>
+                                                </span>
+                                            </h6> 
+                                            <p class="card-text text">version: 2023.2.9</p>
                                         </div>
                                     </div>
                                 </div>
@@ -269,93 +337,77 @@
                                 <div class="col-md-3 mt-3">
                                     <div class="card">
                                         <div class="card-body">
-                                            <h6 class="card-title">fuzzing</h6>
-                                            <p class="card-text text">version: 12.5</p>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="col-md-3 mt-3">
-                                    <div class="card">
-                                        <div class="card-body">
-                                            <h6 class="card-title">sdr</h6>
-                                            <p class="card-text text">version: 6.5.0</p>
+                                            <h6 class="card-title row">
+                                                <span class="col">kali-pakage</span> 
+                                                <span class="badge badge-success"><i class="fas fa-check"></i></span>
+                                            </h6> 
+                                            <p class="card-text text">version: 2023.2.9</p>
                                         </div>
                                     </div>
                                 </div>
 
                             </div>
-                        
+
                         </div>
                     </div>
 
-
-
+                    <!-- End of Content Wrapper -->
 
                 </div>
-                <!-- /.container-fluid -->
+                <!-- End of Page Wrapper -->
 
-            </div>
-            <!-- End of Main Content -->
+                <!-- Footer -->
+                <footer class="sticky-footer bg-white">
+                    <div class="container my-auto">
+                        <div class="copyright text-center my-auto">
+                            <span>Copyright &copy; Maohammed Abu Mohsin</span>
+                        </div>
+                    </div>
+                </footer>
 
-            <!-- Footer -->
-            <footer class="sticky-footer bg-white">
-                <div class="container my-auto">
-                    <div class="copyright text-center my-auto">
-                        <span>Copyright &copy; Maohammed Abu Mohsin</span>
+                <!-- Scroll to Top Button-->
+                <a class="scroll-to-top rounded" href="#page-top">
+                    <i class="fas fa-angle-up"></i>
+                </a>
+
+                <!-- Logout Modal-->
+                <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
+                                <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">×</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">Select "Logout" below if you are ready to end your current session.
+                            </div>
+                            <div class="modal-footer">
+                                <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
+                                <a class="btn btn-primary" href="login.html">Logout</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </footer>
-            <!-- End of Footer -->
 
-        </div>
-        <!-- End of Content Wrapper -->
+                <!-- Bootstrap core JavaScript-->
+                <script src="vendor/jquery/jquery.min.js"></script>
+                <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
-    </div>
-    <!-- End of Page Wrapper -->
+                <!-- Core plugin JavaScript-->
+                <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
 
-    <!-- Scroll to Top Button-->
-    <a class="scroll-to-top rounded" href="#page-top">
-        <i class="fas fa-angle-up"></i>
-    </a>
+                <!-- Custom scripts for all pages-->
+                <script src="js/sb-admin-2.min.js"></script>
 
-    <!-- Logout Modal-->
-    <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-        aria-hidden="true">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
-                    <button class="close" type="button" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">×</span>
-                    </button>
-                </div>
-                <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
-                <div class="modal-footer">
-                    <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
-                    <a class="btn btn-primary" href="login.html">Logout</a>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Bootstrap core JavaScript-->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
-    <!-- Core plugin JavaScript-->
-    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
-
-    <!-- Custom scripts for all pages-->
-    <script src="js/sb-admin-2.min.js"></script>
-
-    <script>
-        function copyToClipboard() {
-            var key = document.getElementById("my-key");
-            key.select();
-            document.execCommand("copy");
-        }
-    </script>
+                <script>
+                    function copyToClipboard() {
+                        var key = document.getElementById("my-key");
+                        key.select();
+                        document.execCommand("copy");
+                    }
+                </script>
 
 </body>
 

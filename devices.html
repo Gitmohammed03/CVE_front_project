@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>CVEs Checker - Dashboard</title>
+    <title>CVEs Checker - Devices</title>
 
     <!-- Custom fonts for this template-->
     <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -42,14 +42,14 @@
             <hr class="sidebar-divider my-0">
 
             <!-- Nav Item - Dashboard -->
-            <li class="nav-item active">
+            <li class="nav-item">
                 <a class="nav-link" href="dashboard.html">
                     <i class="fas fa-fw fa-tachometer-alt"></i>
                     <span>Dashboard</span></a>
             </li>
 
             <!-- Nav Item - Devices -->
-            <li class="nav-item">
+            <li class="nav-item active">
                 <a class="nav-link" href="devices.html">
                     <i class="fas fa-solid fa-desktop"></i>
                     <span>Devices</span></a>
@@ -215,117 +215,20 @@
                 <div class="container-fluid">
 
                     <!-- Page Heading -->
-                
                     <div class="d-sm-flex align-items-center justify-content-between mb-4">
-                        <h1 class="h3 mb-0 text-gray-800">Dashboard</h1>
-                        <!-- <a href="#" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i class="fas fa-download fa-sm text-white-50"></i> Generate Report</a> -->
-                    </div>
-
-                    <div class="row">
-                        <!-- Earnings (Monthly) Card Example -->
-                        <div class="col-xl-3 col-md-6 mb-4">
-                            <div class="card border-left-danger shadow h-100 py-2">
-                                <div class="card-body">
-                                    <div class="row no-gutters align-items-center">
-                                        <div class="col mr-2">
-                                            <div class="text-xs font-weight-bold text-danger text-uppercase mb-1">
-                                                Vulnerabilities</div>
-                                            <div class="h5 mb-0 font-weight-bold text-gray-800">12</div>
-                                        </div>
-                                        <div class="col-auto">
-                                            <i class="fas fa-bug fa-2x text-danger"></i>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Earnings (Monthly) Card Example -->
-                        <div class="col-xl-3 col-md-6 mb-4">
-                            <div class="card border-left-success shadow h-100 py-2">
-                                <div class="card-body">
-                                    <div class="row no-gutters align-items-center">
-                                        <div class="col mr-2">
-                                            <div class="text-xs font-weight-bold text-success text-uppercase mb-1">
-                                                last check</div>
-                                            <div class="h5 mb-0 font-weight-bold text-gray-800">3 days ago</div>
-                                        </div>
-                                        <div class="col-auto">
-                                            <i class="fas fa-calendar fa-2x text-success"></i>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Earnings (Monthly) Card Example  -->
-                        <!-- <div class="col-xl-3 col-md-6 mb-4">
-                            <div class="card border-left-info shadow h-100 py-2">
-                                <div class="card-body">
-                                    <div class="row no-gutters align-items-center">
-                                        <div class="col mr-2">
-                                            <div class="text-xs font-weight-bold text-info text-uppercase mb-1">
-                                                Disk Space
-                                            </div>
-                                            <div class="row no-gutters align-items-center">
-                                                <div class="col-auto">
-                                                    <div class="h5 mb-0 mr-3 font-weight-bold text-gray-800">70%</div>
-                                                </div>
-                                                <div class="col">
-                                                    <div class="progress progress-sm mr-2">
-                                                        <div class="progress-bar bg-info" role="progressbar"
-                                                            style="width: 70%" aria-valuenow="70" aria-valuemin="0"
-                                                            aria-valuemax="100"></div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-auto">
-                                            <i class="fas fa-hdd fa-2x text-info"></i>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div> -->
-
-                        <!-- Pending Requests Card Example -->
-                        <!-- <div class="col-xl-3 col-md-6 mb-4">
-                            <div class="card border-left-danger shadow h-100 py-2">
-                                <div class="card-body">
-                                    <div class="row no-gutters align-items-center">
-                                        <div class="col mr-2">
-                                            <div class="text-xs font-weight-bold text-danger text-uppercase mb-1">
-                                                risk ratio</div>
-                                            <div class="row no-gutters align-items-center">
-                                                <div class="col-auto">
-                                                    <div class="h5 mb-0 mr-3 font-weight-bold text-gray-800">92%</div>
-                                                </div>
-                                                <div class="col">
-                                                    <div class="progress progress-sm mr-2">
-                                                        <div class="progress-bar bg-danger" role="progressbar"
-                                                            style="width: 92%" aria-valuenow="92" aria-valuemin="0"
-                                                            aria-valuemax="100"></div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-auto">
-                                            <i class="fas fa-exclamation-triangle fa-2x text-danger"></i>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div> -->
+                        <h1 class="h3 mb-0 text-gray-800">Devices</h1>
+                        <a href="#" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i class="fas fa-plus fa-sm text-white-50"></i> Add new Device</a>
                     </div>
 
                     <div class="card shadow mb-4">
                         <!-- Card Header - Accordion -->
-                        <a href="#collapseLastDevice"
+                        <a href="#collapseAllDevice"
                             class="d-flex align-items-center justify-content-between card-header py-3"
                             data-toggle="collapse" role="button" aria-expanded="true"
-                            aria-controls="collapseLastDevice">
-                            <h6 class="m-0 font-weight-bold text-primary">Last Scan Devices</h6>
+                            aria-controls="collapseAllDevice">
+                            <h6 class="m-0 font-weight-bold text-primary">All Devices</h6>
                         </a>
-                        <div class="collapse show" id="collapseLastDevice">
+                        <div class="collapse show" id="collapseAllDevice">
                             <div class="card-body">
                                 <div class="input-group">
                                     <div class="container mb-3" id="#collapsesySystemInfo">
@@ -349,6 +252,102 @@
                                                             <div class="col text-success"> <span
                                                                     class="badge badge-warning">In Progress</span>
                                                             </div>
+                                                            <div class="col-auto ml-auto">
+                                                                <a href="packages.html"
+                                                                    class="btn btn-sm btn-primary btn-icon-split">
+                                                                    <span class="text">View</span>
+                                                                    <span class="icon text-white-50">
+                                                                        <i class="fas fa-arrow-right"></i>
+                                                                    </span>
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-md-4">
+                                                <div class="card p-3 mb-2">
+                                                    <div class="d-flex justify-content-between">
+                                                        <div class="d-flex flex-row align-items-center">
+                                                            <div class="icon"> <i class="bx bxl-mailchimp"></i> </div>
+
+                                                            <div class="ms-2 c-details">
+                                                                <h6 class="mb-0">Name devices: <span
+                                                                        class="badge badge-info"> Kali linux</span></h6>
+
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+                                                    <div class="mt-5">
+                                                        <div class="row">
+                                                            <div class="col text-success"> <span
+                                                                    class="badge badge-success">Completed</span> </div>
+                                                            <div class="col-auto ml-auto">
+                                                                <a href="packages.html"
+                                                                    class="btn btn-sm btn-primary btn-icon-split">
+                                                                    <span class="text">View</span>
+                                                                    <span class="icon text-white-50">
+                                                                        <i class="fas fa-arrow-right"></i>
+                                                                    </span>
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-md-4">
+                                                <div class="card p-3 mb-2">
+                                                    <div class="d-flex justify-content-between">
+                                                        <div class="d-flex flex-row align-items-center">
+                                                            <div class="icon"> <i class="bx bxl-mailchimp"></i> </div>
+
+                                                            <div class="ms-2 c-details">
+                                                                <h6 class="mb-0">Name devices: <span
+                                                                        class="badge badge-info"> Kali linux</span></h6>
+
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+                                                    <div class="mt-5">
+                                                        <div class="row">
+                                                            <div class="col text-success"> <span
+                                                                    class="badge badge-danger">Error</span> </div>
+                                                            <div class="col-auto ml-auto">
+                                                                <a href="packages.html"
+                                                                    class="btn btn-sm btn-primary btn-icon-split">
+                                                                    <span class="text">View</span>
+                                                                    <span class="icon text-white-50">
+                                                                        <i class="fas fa-arrow-right"></i>
+                                                                    </span>
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-md-4">
+                                                <div class="card p-3 mb-2">
+                                                    <div class="d-flex justify-content-between">
+                                                        <div class="d-flex flex-row align-items-center">
+                                                            <div class="icon"> <i class="bx bxl-mailchimp"></i> </div>
+
+                                                            <div class="ms-2 c-details">
+                                                                <h6 class="mb-0">Name devices: <span
+                                                                        class="badge badge-info"> Kali linux</span></h6>
+
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+                                                    <div class="mt-5">
+                                                        <div class="row">
+                                                            <div class="col text-success"> <span
+                                                                    class="badge badge-danger">Error</span> </div>
                                                             <div class="col-auto ml-auto">
                                                                 <a href="packages.html"
                                                                     class="btn btn-sm btn-primary btn-icon-split">
@@ -525,6 +524,14 @@
 
                 <!-- Custom scripts for all pages-->
                 <script src="js/sb-admin-2.min.js"></script>
+
+                <script>
+                    function copyToClipboard() {
+                        var key = document.getElementById("my-key");
+                        key.select();
+                        document.execCommand("copy");
+                    }
+                </script>
 
 </body>
 
