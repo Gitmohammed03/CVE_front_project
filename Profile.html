@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>CVEs Checker - Devices</title>
+    <title>CVEs Checker - Dashboard</title>
 
     <!-- Custom fonts for this template-->
     <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -42,14 +42,14 @@
             <hr class="sidebar-divider my-0">
 
             <!-- Nav Item - Dashboard -->
-            <li class="nav-item">
+            <li class="nav-item active">
                 <a class="nav-link" href="dashboard.html">
                     <i class="fas fa-fw fa-tachometer-alt"></i>
                     <span>Dashboard</span></a>
             </li>
 
             <!-- Nav Item - Devices -->
-            <li class="nav-item active">
+            <li class="nav-item">
                 <a class="nav-link" href="devices.html">
                     <i class="fas fa-solid fa-desktop"></i>
                     <span>Devices</span></a>
@@ -184,7 +184,7 @@
                             <!-- Dropdown - User Information -->
                             <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in"
                                 aria-labelledby="userDropdown">
-                                <a class="dropdown-item" href="#">
+                                <a class="dropdown-item" href="Profile.html">
                                     <i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>
                                     Profile
                                 </a>
@@ -215,243 +215,209 @@
                 <div class="container-fluid">
 
                     <!-- Page Heading -->
+
                     <div class="d-sm-flex align-items-center justify-content-between mb-4">
-                        <h1 class="h3 mb-0 text-gray-800">Devices</h1>
-                        <a href="1.html" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i
-                                class="fas fa-download fa-sm text-white-50"></i> Generate Report</a>
+                        <h1 class="h3 mb-0 text-gray-800">Profile</h1>
+                        <!-- <a href="#" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i class="fas fa-download fa-sm text-white-50"></i> Generate Report</a> -->
                     </div>
 
-                    <div class="card shadow mb-4">
-                        <!-- Card Header - Accordion -->
-                        <a href="#collapseApiKey" class="d-block card-header py-3" data-toggle="collapse" role="button"
-                            aria-expanded="true" aria-controls="collapseApiKey">
-                            <h6 class="m-0 font-weight-bold text-primary">API Key</h6>
-                        </a>
-                        <!-- Card Content - Collapse -->
-                        <div class="collapse show" id="collapseApiKey">
-                            <div class="card-body">
-                                <div class="input-group">
-                                    <input type="text" id="my-key" class="form-control"
-                                        value="aksndsdcs-sgvbb54a-aca6c-asiwe88dau5w" readonly>
-                                    <div class="input-group-append">
-                                        <button class="btn btn-outline-secondary" type="button"
-                                            onclick="copyToClipboard()">
-                                            <i class="fas fa-copy"></i></button>
-                                    </div>
-                                </div>
+                    <div class="row">
+
+    <!-- Page Heading -->
+    <h1 class="h3 mb-4 text-gray-800"></h1>
+    
+
+    <div class="row">
+
+        <div class="col-lg-4 order-lg-2">
+
+            <div class="card shadow mb-4">
+                <div class="card-profile-image mt-4">
+                    <!--imge  -->
+                    <img class="img-profile rounded-circle" src="img/undraw_profile.svg" style="height: 200px; position: relative; left: 30px;">
+                </div>
+                <div class="card-body">
+
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="text-center">
+                                <h5 class="font-weight-bold"></h5>
+                                <p>Administrator</p>
                             </div>
                         </div>
                     </div>
 
-
-                    <div class="card mt-3">
-                        <div class="card-header">
-                            <h5 class="card-title">Device information</h5>
-                        </div>
-                        <div class="card-body">
-
-                            <!-- Card Content - Collapse -->
-
-                            <div class="card-body">
-                                <ul class="list-group list-group-flush">
-                                    <li class="list-group-item"><strong>OS:</strong>
-                                        <span class="badge badge-info" id="os"> Kali linux</span>
-                                    </li>
-                                    <li class="list-group-item"><strong>Kernel Version:</strong>
-                                        <span class="badge badge-info" id="kernel-version">5.12.0</span>
-                                    </li>
-                                    <li class="list-group-item"><strong>Hostname:</strong>
-                                        <span class="badge badge-info" id="hostname">mohammed.local</span>
-                                    </li>
-                                    <li class="list-group-item"><strong>Processor:</strong>
-                                        <span class="badge badge-info" id="processor">Intel Core i7</span>
-                                    </li>
-                                    <li class="list-group-item"><strong>Memory:</strong>
-                                        <span class="badge badge-info" id="memory">16 GB</span>
-                                    </li>
-                                    <li class="list-group-item"><strong>Disk Space:</strong>
-                                        <span class="badge badge-info" id="disk-space"> 512 GB</span>
-                                    </li>
-                                </ul>
+                    <div class="row">
+                        <div class="col-md-0">
+                            <div class="card-profile-stats">
+                                <span class="heading">UesrName :</span>
+                                <span class="description">Mohammed232@.com</span>
                             </div>
                         </div>
-                    </div>
-
-                    <div class="card mt-3">
-                        <div class="card-header">
-                            <h5 class="card-title">All packages on system</h5>
+                        <br >
+                        <div class="col-md-0">
+                            <div class="card-profile-stats">
+                                <span class="heading">EmailAddress:</span>
+                                <span class="description">Mohammed@.com</span>
+                            </div>
                         </div>
-                        <div class="card-body">
+                        <!-- <div class="col-md-4">
+                            <div class="card-profile-stats">
+                                <span class="heading">89</span>
+                                <span class="description">Total Report</span>
+                            </div>
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="col-lg-8 order-lg-1">
+
+            <div class="card shadow mb-4">
+
+                <div class="card-header py-3">
+                    <h6 class="m-0 font-weight-bold text-primary">My Account</h6>
+                </div>
+
+                <div class="card-body">
+
+                    <form >
+                        <input type="hidden" name="_token" >
+
+                        <input type="hidden" name="_method" >
+
+                        <h6 class="heading-small text-muted mb-4">User information</h6>
+
+                        <div class="pl-lg-4">
                             <div class="row">
-                                <div class="col-md-3 mt-3">
-                                    <div class="card">
-                                        <div class="card-body">
-                                            <h6 class="card-title row">
-                                                <span class="col">kali-pakage</span>
-                                                <span class="badge badge-success"><i class="fas fa-check"></i></span>
-                                            </h6>
-                                            <p class="card-text text">version: 2023.2.9</p>
-                                        </div>
+                                <div class="col-lg-12">
+                                    <div class="form-group focused">
+                                        <label class="form-control-label" for="name">Uesr Name<span class="small text-danger">*</span></label>
+                                        <input type="text" id="name" class="form-control" name="name" placeholder="Name">
                                     </div>
                                 </div>
-
-                                <div class="col-md-3 mt-3">
-                                    <div class="card">
-                                        <div class="card-body">
-                                            <h6 class="card-title row">
-                                                <span class="col">kali-pakage</span>
-                                                <span class="badge badge-success"><i class="fas fa-check"></i></span>
-                                            </h6>
-                                            <p class="card-text text">version: 2023.2.9</p>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="col-md-3 mt-3">
-                                    <div class="card">
-                                        <div class="card-body">
-                                            <h6 class="card-title row">
-                                                <span class="col">kali-pakage</span>
-                                                <span class="badge badge-warning">
-                                                    <i class="fas fa-exclamation-triangle"></i>
-                                                </span>
-                                            </h6>
-                                            <p class="card-text text">version: 2023.2.9</p>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="col-md-3 mt-3">
-                                    <div class="card">
-                                        <div class="card-body">
-                                            <h6 class="card-title row">
-                                                <span class="col">kali-pakage</span>
-                                                <span class="badge badge-warning">
-                                                    <i class="fas fa-exclamation-triangle"></i>
-                                                </span>
-                                            </h6>
-                                            <p class="card-text text">version: 2023.2.9</p>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="col-md-3 mt-3">
-                                    <div class="card">
-                                        <div class="card-body">
-                                            <h6 class="card-title row">
-                                                <span class="col">kali-pakage</span>
-                                                <span class="badge badge-success"><i class="fas fa-check"></i></span>
-                                            </h6>
-                                            <p class="card-text text">version: 2023.2.9</p>
-                                        </div>
-                                    </div>
-                                </div>
-
-
-
+                               
                             </div>
 
-                            
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <div class="form-group">
+                                        <label class="form-control-label" for="email">Email address<span class="small text-danger">*</span></label>
+                                        <input type="email" id="email" class="form-control" name="email" placeholder="example@example.com" >
+                                    </div>
+                                </div>
+                            </div>
 
-                        </div>
-
-
-                    </div>
-
-
-                    <h1 class="h3 mb-0 text-gray-800">Report</h1>
-                    <hr>
-
-                    <div class="card shadow mb-4">
-                        <!-- Card Header - Accordion -->
-                        <a href="#collapseApiKey" class="d-block card-header py-3" data-toggle="collapse" role="button"
-                            aria-expanded="true" aria-controls="collapseApiKey">
-                            <h6 class="m-0 font-weight-bold text-primary">infected packages (1)</h6>
-                        </a>
-                        <!-- Card Content - Collapse -->
-                        <div class="collapse show" id="collapseApiKey">
-                            <div class="card-body">
-                                <div class="container py-3">
-                                    <table class="table">
-                                      <thead>
-                                        <tr>
-                                          <th>Field</th>
-                                          <th>Value</th>
-                                        </tr>
-                                      </thead>
-                              
-                                      <div class="vulnerability-data">
-                                  
-                                          <td>infected packagess</td>
-                                          <td>ftp , ssh </td>
-                                        </tr>
-                              
-                              
-                                      </div>
-                              
+                            <div class="row">
+                                <div class="col-lg-4">
+                                    <div class="form-group focused">
+                                        <label class="form-control-label" for="current_password">Current password</label>
+                                        <input type="password" id="current_password" class="form-control" name="current_password" placeholder="Current password">
+                                    </div>
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class="form-group focused">
+                                        <label class="form-control-label" for="new_password">New password</label>
+                                        <input type="password" id="new_password" class="form-control" name="new_password" placeholder="New password">
+                                    </div>
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class="form-group focused">
+                                        <label class="form-control-label" for="confirm_password">Confirm password</label>
+                                        <input type="password" id="confirm_password" class="form-control" name="password_confirmation" placeholder="Confirm password">
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                    </div>
-            
 
-                <!-- End of Content Wrapper -->
+                        <!-- Button -->
+                        <div class="pl-lg-4">
+                            <div class="row">
+                                <div class="col text-center">
+                                    <button type="submit" class="btn btn-primary">Save Changes</button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+
+                </div>
+
             </div>
 
+        </div>
 
-            <!-- End of Page Wrapper -->
+    </div>
 
-            <!-- Footer -->
-            <!-- <footer class="sticky-footer bg-white">
-                <div class="container my-auto">
-                    <div class="copyright text-center my-auto">
-                        <span>Copyright &copy; Maohammed Abu Mohsin</span>
+
                     </div>
+                    <!-- /.container-fluid -->
+
                 </div>
-            </footer> -->
+                <!-- End of Main Content -->
 
-            <!-- Scroll to Top Button-->
-            <a class="scroll-to-top rounded" href="#page-top">
-                <i class="fas fa-angle-up"></i>
-            </a>
 
-            <!-- Logout Modal-->
-            <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-                aria-hidden="true">
-                <div class="modal-dialog" role="document">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
-                            <button class="close" type="button" data-dismiss="modal" aria-label="Close">
-                                <span aria-hidden="true">×</span>
-                            </button>
-                        </div>
-                        <div class="modal-body">Select "Logout" below if you are ready to end your current session.
-                        </div>
-                        <div class="modal-footer">
-                            <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
-                            <a class="btn btn-primary" href="login.html">Logout</a>
-                        </div>
-                    </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <!-- End of Footer -->
+
+    </div>
+    <!-- End of Content Wrapper -->
+
+    </div>
+    <!-- End of Page Wrapper -->
+
+    <!-- Footer -->
+    <!-- <footer class="sticky-footer bg-white">
+        <div class="container my-auto">
+            <div class="copyright text-center my-auto">
+                <span>Copyright &copy; Maohammed Abu Mohsin</span>
+            </div>
+        </div>
+    </footer> -->
+
+    <!-- Scroll to Top Button-->
+    <a class="scroll-to-top rounded" href="#page-top">
+        <i class="fas fa-angle-up"></i>
+    </a>
+
+    <!-- Logout Modal-->
+    <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
+                    <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                    </button>
+                </div>
+                <div class="modal-body">Select "Logout" below if you are ready to end your current session.
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
+                    <a class="btn btn-primary" href="login.html">Logout</a>
                 </div>
             </div>
+        </div>
+    </div>
 
-            <!-- Bootstrap core JavaScript-->
-            <script src="vendor/jquery/jquery.min.js"></script>
-            <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- Bootstrap core JavaScript-->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
-            <!-- Core plugin JavaScript-->
-            <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+    <!-- Core plugin JavaScript-->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
 
-            <!-- Custom scripts for all pages-->
-            <script src="js/sb-admin-2.min.js"></script>
-
-            <script>
-                function copyToClipboard() {
-                    var key = document.getElementById("my-key");
-                    key.select();
-                    document.execCommand("copy");
-                }
-            </script>
+    <!-- Custom scripts for all pages-->
+    <script src="js/sb-admin-2.min.js"></script>
 
 </body>
 
